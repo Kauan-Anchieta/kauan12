@@ -43,8 +43,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(450, 288);
+            this.button1.Location = new System.Drawing.Point(470, 288);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 51);
             this.button1.TabIndex = 0;
@@ -55,6 +56,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Location = new System.Drawing.Point(173, 288);
             this.button2.Name = "button2";
@@ -66,8 +68,10 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Indigo;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(519, 96);
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(554, 110);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 31);
             this.textBox1.TabIndex = 2;
@@ -75,8 +79,10 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.Indigo;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(328, 96);
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(346, 110);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 31);
             this.textBox2.TabIndex = 3;
@@ -84,8 +90,10 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.Indigo;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(143, 94);
+            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox3.Location = new System.Drawing.Point(142, 110);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 31);
             this.textBox3.TabIndex = 4;
@@ -94,10 +102,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 186);
+            this.label1.BackColor = System.Drawing.Color.Blue;
+            this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(265, 196);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 31);
+            this.label1.Size = new System.Drawing.Size(252, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "Calcular Média";
             // 
@@ -114,9 +124,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -4);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 453);
+            this.pictureBox1.Size = new System.Drawing.Size(809, 459);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -125,7 +138,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
@@ -133,8 +145,11 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Média";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
